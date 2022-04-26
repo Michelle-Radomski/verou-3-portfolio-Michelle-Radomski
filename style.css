@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -7,11 +7,8 @@
 
 body {
     background-color: #143F6B;
-    font-family: 'Fredoka', sans-serif;
-}
-
-header {
-    border-bottom: 3px solid #F55353;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
 }
 
 nav {
@@ -41,4 +38,82 @@ a {
     color: #F55353;
     text-transform: uppercase;
     font-size: 2em;
+}
+
+main {
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    border: 3px solid #F55353;
+    width: 50%;
+}
+
+.box1:hover {
+    animation: shake 3s ease infinite;
+}
+
+.box2 {
+    border:3px solid #00FFC6;
+    background-color: #14406b;
+    padding: 10px;
+    transform: translate(-1%, 10%);
+    color: #f9f9b9;
+}
+.box2:hover {
+    animation: move 1s ease infinite;
+}
+
+button {
+    border: 3px solid #00FFC6;
+    background-color: #143F6B;
+    color:#f9f9b9;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+button:hover {
+    border: 3px solid #F55353;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: rotate(-0.2deg);
+    }
+    20%, 80% {
+        transform: rotate(0.2deg);
+    }
+    30%, 50%, 70% {
+        transform: rotate(-0.4deg);
+    }
+    40%, 60% {
+        transform: rotate(0.4deg);
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(0deg) translate(-1%, 10%);
+    }
+    25% {
+        transform: rotate(0.5deg) translate(-1%, 15%);
+    }
+    50% {
+        transform: rotate(0deg) translate(-1%, 10%);
+    }
+    75% {
+        transform: rotate(-0.5deg) translate(-1%, 15%);
+    }
+    100% {
+        transform: rotate(0deg) translate(-1%, 10%);
+    }
 }
