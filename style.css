@@ -19,15 +19,7 @@ body {
     animation: fadeIn 3s;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
+/*************************** HEADER *******************************/
 nav {
     display: flex;
     justify-content: space-between;
@@ -55,8 +47,10 @@ a {
     color: #F55353;
     text-transform: uppercase;
     font-size: 2em;
+    text-shadow: 2px 2px #00FFC6;
 }
 
+/************************** START SCREEN ******************************/
 .container {
     display: flex;
     justify-content: center;
@@ -77,14 +71,19 @@ a {
     border:3px solid #00FFC6;
     background-color: #14406b;
     padding: 10px;
-    transform: translate(-1%, 10%);
+    transform: translate(-2%, 8%);
     color: #f9f9b9;
 }
+
 .box2:hover {
     animation: move 1s ease infinite;
 }
 
-button {
+.box2 h1, p {
+    font-size: 2em;
+}
+
+#show-website {
     border: 3px solid #00FFC6;
     background-color: #143F6B;
     color:#f9f9b9;
@@ -96,8 +95,19 @@ button {
     margin: 10px 0;
 }
 
-button:hover {
+#show-website:hover {
     border: 3px solid #F55353;
+}
+
+
+/****************************** KEYFRAMES ************************************/
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes shake {
@@ -117,22 +127,22 @@ button:hover {
 
 @keyframes move {
     0% {
-        transform: rotate(0deg) translate(-1%, 10%);
+        transform: rotate(0deg) translate(-2%, 8%);
     }
     25% {
-        transform: rotate(0.5deg) translate(-1%, 15%);
+        transform: rotate(0.5deg) translate(-2%, 12%);
     }
     50% {
-        transform: rotate(0deg) translate(-1%, 10%);
+        transform: rotate(0deg) translate(-2%, 8%);
     }
     75% {
-        transform: rotate(-0.5deg) translate(-1%, 15%);
+        transform: rotate(-0.5deg) translate(-2%, 12%);
     }
     100% {
-        transform: rotate(0deg) translate(-1%, 10%);
+        transform: rotate(0deg) translate(-2%, 8%);
     }
 }
-
+/*************************** MEDIA QUERIES *********************************/
 @media screen and (min-width: 768px) {
     .box1 {
         width: 50%;
