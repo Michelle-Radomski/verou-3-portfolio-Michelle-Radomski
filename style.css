@@ -29,6 +29,21 @@ nav {
 ul {
     display: flex;
     align-items: center;
+    position: absolute;
+    transform: translateX(548%);
+}
+
+.fly-in {
+    animation: flyIn 3s ease-out;
+}
+
+@keyframes flyIn {
+    0% {
+        transform: translateX(700%);
+    }
+    100% {
+        transform: translateX(550%);
+    }
 }
 
 li {
