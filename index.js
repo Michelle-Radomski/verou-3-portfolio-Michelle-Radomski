@@ -2,10 +2,10 @@ const showWebsite = () => {
     console.log("click clickedy click");
     const hiddenContents = document.querySelectorAll(".hidden");
     for (const hiddenContent of hiddenContents) {
-        hiddenContent.classList.toggle("visible");
+        hiddenContent.classList.add("visible");
     }
 
-    const section = document.querySelector(".container");
+    const section = document.querySelector("#startcontainer");
     section.style.display = "none";
 };
 
