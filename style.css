@@ -21,6 +21,11 @@ p {
     line-height: 140%;
 }
 
+section {
+    margin: 0 auto;
+    width: 90%;
+}
+
 .hidden {
     visibility: hidden;
 }
@@ -29,11 +34,13 @@ p {
     animation: fadeIn 3s;
 }
 
-.container {
+/* .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: start;
     margin: 0 auto;
-}
+} */
 
 /*************************** HEADER *******************************/
 nav {
@@ -71,12 +78,17 @@ a {
     font-size: 1.5em;
 }
 
-#intro {
-    width: 80%;
-}
-
 #intro p {
     margin-top: 10px;
+}
+
+/******************************** ABOUT ME *****************************/
+#profile-pic {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: 50% 100%;
+    border-radius: 50%;
 }
 /************************** START SCREEN ******************************/
 #startcontainer {
