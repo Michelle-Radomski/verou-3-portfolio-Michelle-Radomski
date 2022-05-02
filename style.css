@@ -14,7 +14,7 @@ body {
 
 p {
     font-size: 1.125em;
-    line-height: 140%;
+    line-height: 1.5;
 }
 
 section {
@@ -43,6 +43,7 @@ nav {
     display: flex;
     justify-content: space-between;
     margin: 5px;
+    flex-wrap: wrap;
 }
 
 ul {
@@ -77,9 +78,8 @@ a:hover {
 #intro {
     transform: skewY(-10deg);
     width: 100%;
-    position:absolute;
+    position: relative;
     z-index: -1;
-    /* background-color: rgb(6, 9, 25); */
 }
 
 #intro div {
@@ -106,12 +106,48 @@ a:hover {
 }
 
 /******************************** ABOUT ME *****************************/
+#about-me {
+    position: relative;
+    padding: 45px;
+    width: 100%;
+    /* border: 1px solid yellow; */
+    box-sizing: border-box;
+}
+
+#about-me:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(6, 9, 25);
+    transform: skewY(-10deg);
+}
+
+#content {
+    position: relative;
+    /* border: 1px dashed red; */
+    margin: 10px;
+}
+
+#content p {
+    padding-top: 10px;
+}
+
 #profile-pic {
+    position: relative;
     width: 250px;
     height: 250px;
     object-fit: cover;
     object-position: 50% 100%;
-    border-radius: 50%;
+    border-radius: 5%;
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /************************** START SCREEN ******************************/
 #startcontainer {
@@ -218,5 +254,23 @@ a:hover {
         width: 60%;
         margin: 0 auto;
         font-size: 1.25em;
+    }
+
+    #about-me {
+        padding: 60px;
+    }
+
+    #content {
+        margin: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #about-me {
+        padding: 110px;
+    }
+
+    #content {
+        margin: 30px;
     }
 }
