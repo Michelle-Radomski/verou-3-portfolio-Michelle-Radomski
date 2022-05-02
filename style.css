@@ -288,6 +288,7 @@ a:hover {
     }
 }
 
+/* SUCH WOW. Big screen. */
 @media screen and (min-width: 1024px) {
     #about-me {
         padding: 110px;
