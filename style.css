@@ -261,6 +261,7 @@ a:hover {
         transform: rotate(0deg) translate(-2%, 8%);
     }
 }
+
 /*************************** MEDIA QUERIES *********************************/
 @media screen and (min-width: 768px) {
     .box1 {
