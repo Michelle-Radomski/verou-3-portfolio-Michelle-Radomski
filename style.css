@@ -164,6 +164,7 @@ a:hover {
     object-fit: cover;
     object-position: 50% 100%;
     border-radius: 5%;
+    margin: 15px 0 0;
 }
 
 .picture {
@@ -261,9 +262,12 @@ a:hover {
         transform: rotate(0deg) translate(-2%, 8%);
     }
 }
-
 /*************************** MEDIA QUERIES *********************************/
 @media screen and (min-width: 768px) {
+    p {
+        font-size: 1.25em;
+    }
+    
     .box1 {
         width: 50%;
     }
@@ -288,13 +292,22 @@ a:hover {
     }
 }
 
-/* SUCH WOW. Big screen. */
 @media screen and (min-width: 1024px) {
     #about-me {
         padding: 110px;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     #content {
         margin: 30px;
+        order: 1;
+        width: 60%;
+    }
+
+    #content h2 {
+        text-align: right;
+        margin: 0 20px 5px 0;
+        font-size: 2em;
     }
 }
