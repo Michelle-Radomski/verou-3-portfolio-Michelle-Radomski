@@ -25,9 +25,18 @@ section {
 .hidden {
     visibility: hidden;
 }
+
 .visible {
     visibility: visible;
     animation: fadeIn 3s;
+}
+
+.no-display {
+    display: none;
+}
+
+.display {
+    display: block;	
 }
 
 /* .container {
@@ -185,7 +194,7 @@ a:hover {
     flex-direction: column;
 }
 
-#experience:before {
+/* #experience:before {
     position: absolute;
     content: '';
     top: 0;
@@ -194,7 +203,7 @@ a:hover {
     bottom: 0;
     background-color: #0c3255;
     transform: skewY(-10deg);
-}
+} */
 
 #skills-navbar ul {
     justify-content: space-between;
