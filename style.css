@@ -49,6 +49,7 @@ nav {
 ul {
     display: flex;
     align-items: center;
+    font-size: 1.125em;
 }
 
 li {
@@ -140,18 +141,18 @@ a:hover {
     z-index: -1;
 } */
 
-#content {
+.content {
     position: relative;
     /* border: 1px dashed red; */
     margin: 10px;
 }
 
-#content p {
+.content p {
     padding-top: 10px;
     font-weight: 500;
 }
 
-#content::first-letter {
+.content::first-letter {
     color: #F55353;
     font-size: 1.7em;
     margin-right: 2px;
@@ -172,6 +173,48 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
+
+/******************************* EXPERIENCE ****************************/
+#experience {
+    position: relative;
+    padding: 45px;
+    width: 100%;
+    /* border: 1px solid yellow; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+#experience:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #0c3255;
+    transform: skewY(-10deg);
+}
+
+#skills-navbar ul {
+    justify-content: space-between;
+}
+
+button {
+    border: 2px solid #00FFC6;
+    border-radius: 5px;
+    background-color: #0c3255;
+    color: #f5f5cc;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.active, #skills-navbar button:hover {
+    background-color: #00FFC6;
+    color: rgb(6, 9, 25)
+}
+
 /************************** START SCREEN ******************************/
 #startcontainer {
     display: flex;
@@ -287,7 +330,7 @@ a:hover {
         padding: 60px;
     }
 
-    #content {
+    .content {
         margin: 20px;
     }
 }
@@ -299,13 +342,13 @@ a:hover {
         justify-content: space-around;
     }
 
-    #content {
+    .content {
         margin: 30px;
         order: 1;
         width: 60%;
     }
 
-    #content h2 {
+    .content h2 {
         text-align: right;
         margin: 0 20px 5px 0;
         font-size: 2em;
