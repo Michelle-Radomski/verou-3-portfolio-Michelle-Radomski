@@ -255,6 +255,52 @@ button {
     max-width: 650px;
 }
 
+.timeline {
+    max-width: 750px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+}
+
+.timeline-component {
+    margin: 0 20px 20px 20px;
+}
+
+.bottom-margin {
+    margin-bottom: 0;
+}
+
+.background {
+    background-color: rgb(6, 9, 25);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.right {
+    text-align: right;
+}
+
+.timeline-bar {
+    position: relative;
+    background-color: #00FFC6;
+}
+
+.timeline-circle {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #F55353;
+    border-radius: 50%;
+}
+
+.bottom {
+    top: initial;
+    bottom: 0;
+}
+
 /************************** START SCREEN ******************************/
 #startcontainer {
     display: flex;
