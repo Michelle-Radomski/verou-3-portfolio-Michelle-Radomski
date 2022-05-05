@@ -12,7 +12,7 @@ body {
     color: #f5f5cc;
 }
 
-p {
+p, span {
     font-size: 1.125em;
     line-height: 1.5;
 }
@@ -161,7 +161,7 @@ a:hover {
     font-weight: 500;
 }
 
-.content::first-letter {
+h2::first-letter {
     color: #F55353;
     font-size: 1.7em;
     margin-right: 2px;
@@ -185,13 +185,13 @@ a:hover {
 
 /******************************* EXPERIENCE ****************************/
 #experience {
-    position: relative;
+    /* position: relative; */
     padding: 45px;
     width: 100%;
     /* border: 1px solid yellow; */
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 
 /* #experience:before {
@@ -205,8 +205,16 @@ a:hover {
     transform: skewY(-10deg);
 } */
 
-#skills-navbar ul {
-    justify-content: space-between;
+#skills-navbar {
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+button:nth-child(2) {
+    margin: 0 10px;
+}
+button:nth-child(3) {
+    margin-right: 10px;
 }
 
 button {
@@ -215,6 +223,8 @@ button {
     background-color: #0c3255;
     color: #f5f5cc;
     padding: 10px;
+    white-space: nowrap;
+    margin: 1px;
     font-weight: 600;
     cursor: pointer;
 }
@@ -222,6 +232,27 @@ button {
 .active, #skills-navbar button:hover {
     background-color: #00FFC6;
     color: rgb(6, 9, 25)
+}
+
+.fa-circle {
+    color: #f5f5cc;
+}
+
+.inner-icon {
+    color: #0c3255;
+    font-size: 20px;
+}
+
+.skill-card {
+    background-color: rgb(6, 9, 25);
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    max-width: 300px;
+}
+
+.skills {
+    max-width: 650px;
 }
 
 /************************** START SCREEN ******************************/
@@ -259,7 +290,7 @@ button {
 #show-website {
     border: 3px solid #00FFC6;
     background-color: #0c3255;
-    color:#f9f9b9;
+    color:#f5f5cc;
     padding: 10px;
     border-radius: 10px;
     text-transform: uppercase;
@@ -316,8 +347,12 @@ button {
 }
 /*************************** MEDIA QUERIES *********************************/
 @media screen and (min-width: 768px) {
-    p {
+    p, span {
         font-size: 1.25em;
+    }
+
+    button {
+        font-size: 1.125em;
     }
     
     .box1 {
@@ -335,12 +370,36 @@ button {
         font-size: 1.25em;
     }
 
-    #about-me {
+    #about-me, #experience {
         padding: 60px;
     }
 
     .content {
         margin: 20px;
+    }
+
+    #experience {
+        display: flex;
+        justify-content: center;
+    }
+
+    .skill-card {
+        width: 275px;
+    }
+
+    .skill-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .skills {
+        width: 650px;
+    }
+    
+    /* If I don't put it here again, my javascript is ignored */
+    .no-display {
+        display: none;
     }
 }
 
@@ -354,12 +413,29 @@ button {
     .content {
         margin: 30px;
         order: 1;
+    }
+
+    .content h2 {
+        margin: 0 20px 5px 0;
+        font-size: 2em;
+    }
+
+    #about-me .content {
         width: 60%;
     }
 
     .content h2 {
         text-align: right;
-        margin: 0 20px 5px 0;
-        font-size: 2em;
+    }
+
+    #experience {
+        justify-content: flex-end;
+        padding: 110px;
+    }
+
+    #my-skills {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 }
