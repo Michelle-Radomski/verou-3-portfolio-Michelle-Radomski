@@ -39,14 +39,6 @@ section {
     display: block;	
 }
 
-/* .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    margin: 0 auto;
-} */
-
 /*************************** HEADER *******************************/
 nav {
     display: flex;
@@ -257,13 +249,15 @@ button {
 
 .timeline {
     max-width: 750px;
+    max-height: 100px;
     padding: 25px;
     display: grid;
     grid-template-columns: 1fr 3px 1fr;
 }
 
 .timeline-component {
-    margin: 0 20px 20px 20px;
+    margin: 0 20px 20px;
+    max-height: 20px;
 }
 
 .bottom-margin {
@@ -292,7 +286,8 @@ button {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #F55353;
+    background-color: #0c3255;
+    border: 3px solid #F55353;
     border-radius: 50%;
 }
 
@@ -477,6 +472,10 @@ button {
     #experience {
         justify-content: flex-end;
         padding: 110px;
+    }
+
+    .container {
+        display: flex;
     }
 
     #my-skills {
