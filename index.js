@@ -28,14 +28,13 @@ buttons.forEach((button) => {
         switch (button.id) {
             case "front-end":
                 console.log(1);
-                allSkills[0].classList.add("display");
+                allSkills[0].classList.remove("no-display");
                 allSkills[1].classList.add("no-display");
                 allSkills[2].classList.add("no-display");
                 allSkills[3].classList.add("no-display");
                 break;
             case "back-end":
                 console.log(2);
-                allSkills[0].classList.remove("display");
                 allSkills[0].classList.add("no-display");
                 allSkills[1].classList.remove("no-display");
                 allSkills[2].classList.add("no-display");
@@ -43,7 +42,6 @@ buttons.forEach((button) => {
                 break;
             case "tools":
                 console.log(3);
-                allSkills[0].classList.remove("display");
                 allSkills[0].classList.add("no-display");
                 allSkills[1].classList.add("no-display");
                 allSkills[2].classList.remove("no-display");
@@ -51,7 +49,6 @@ buttons.forEach((button) => {
                 break;
             case "soft":
                 console.log(4);
-                allSkills[0].classList.remove("display");
                 allSkills[0].classList.add("no-display");
                 allSkills[1].classList.add("no-display");
                 allSkills[2].classList.add("no-display");
