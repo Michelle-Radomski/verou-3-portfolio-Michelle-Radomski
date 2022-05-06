@@ -389,11 +389,11 @@ button {
 /*************************** MEDIA QUERIES *********************************/
 @media screen and (min-width: 768px) {
     p, span {
-        font-size: 1.25em;
+        /* font-size: 1.25em; */
     }
 
     button {
-        font-size: 1.125em;
+        /* font-size: 1.125em; */
     }
     
     .box1 {
@@ -408,7 +408,7 @@ button {
     #intro p {
         width: 60%;
         margin: 0 auto;
-        font-size: 1.25em;
+        /* font-size: 1.25em; */
     }
 
     #about-me, #experience {
@@ -458,7 +458,7 @@ button {
 
     .content h2 {
         margin: 0 20px 5px 0;
-        font-size: 2em;
+        /* font-size: 2em; */
     }
 
     #about-me .content {
