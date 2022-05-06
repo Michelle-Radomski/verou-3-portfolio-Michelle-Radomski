@@ -199,14 +199,14 @@ h2::first-letter {
 
 #skills-navbar {
     padding: 10px 0;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 button:nth-child(2) {
-    margin: 0 10px;
+    margin: 0 5px;
 }
 button:nth-child(3) {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 button {
@@ -249,7 +249,6 @@ button {
 
 .timeline {
     max-width: 750px;
-    max-height: 100px;
     padding: 25px;
     display: grid;
     grid-template-columns: 1fr 3px 1fr;
@@ -257,7 +256,7 @@ button {
 
 .timeline-component {
     margin: 0 20px 20px;
-    max-height: 20px;
+    white-space: nowrap;
 }
 
 .bottom-margin {
@@ -482,5 +481,12 @@ button {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+    }
+
+    button:nth-child(2) {
+        margin: 0 10px;
+    }
+    button:nth-child(3) {
+        margin-right: 10px;
     }
 }
