@@ -324,8 +324,12 @@ button {
     animation: move 1s ease infinite;
 }
 
-.box2 h1, .box2 p {
-    font-size: 2em;
+.box2 h1 {
+    font-size: 1.5em;
+}
+
+.box2 p {
+    font-size: 1.1em;
 }
 
 #show-website {
@@ -389,11 +393,11 @@ button {
 /*************************** MEDIA QUERIES *********************************/
 @media screen and (min-width: 768px) {
     p, span {
-        /* font-size: 1.25em; */
+        font-size: 1em;
     }
 
     button {
-        /* font-size: 1.125em; */
+        font-size: 1em;
     }
     
     .box1 {
@@ -408,7 +412,7 @@ button {
     #intro p {
         width: 60%;
         margin: 0 auto;
-        /* font-size: 1.25em; */
+        font-size: 1.1em;
     }
 
     #about-me, #experience {
@@ -458,7 +462,7 @@ button {
 
     .content h2 {
         margin: 0 20px 5px 0;
-        /* font-size: 2em; */
+        font-size: 1.5em;
     }
 
     #about-me .content {
