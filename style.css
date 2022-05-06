@@ -250,13 +250,13 @@ button {
 .timeline {
     max-width: 750px;
     padding: 25px;
+    justify-content: center;
     display: grid;
     grid-template-columns: 1fr 3px 1fr;
 }
 
 .timeline-component {
     margin: 0 20px 20px;
-
     height: fit-content;
 }
 
