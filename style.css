@@ -306,6 +306,7 @@ button {
 
 .box1 {
     border: 3px solid #F55353;
+    background-color:#f553536c;
     width: 100%;
 }
 
@@ -315,7 +316,7 @@ button {
 
 .box2 {
     border:3px solid #00FFC6;
-    background-color: #0c3255;
+    background-color: #00ffc864;
     padding: 10px;
     transform: translate(-2%, 8%);
 }
@@ -334,7 +335,7 @@ button {
 
 #show-website {
     border: 3px solid #00FFC6;
-    background-color: #0c3255;
+    background-color: #00ffc864;
     color:#f5f5cc;
     padding: 10px;
     border-radius: 10px;
