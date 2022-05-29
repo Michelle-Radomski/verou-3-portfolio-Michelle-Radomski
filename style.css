@@ -39,6 +39,61 @@ section {
     display: block;	
 }
 
+
+/************************** START SCREEN ******************************/
+#startcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.box1 {
+    border: 3px solid #F55353;
+    background-color:#f553536c;
+    width: 100%;
+}
+
+.box1:hover {
+    animation: shake 3s ease infinite;
+}
+
+.box2 {
+    border:3px solid #00FFC6;
+    background-color: #00ffc864;
+    padding: 10px;
+    transform: translate(-2%, 8%);
+}
+
+.box2:hover {
+    animation: move 1s ease infinite;
+}
+
+.box2 h1 {
+    font-size: 1.5em;
+}
+
+.box2 p {
+    font-size: 1.1em;
+}
+
+#show-website {
+    border: 3px solid #00FFC6;
+    background-color: #00ffc864;
+    color:#f5f5cc;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#show-website:hover {
+    border: 3px solid #F55353;
+}
+
+
 /*************************** HEADER *******************************/
 nav {
     display: flex;
@@ -87,6 +142,7 @@ header a:hover:before {
 #logo h1 {
     color: #00FFC6;
 }
+
 /*************************** INTRO ************************************/
 #intro {
     transform: skewY(-10deg);
@@ -124,7 +180,6 @@ header a:hover:before {
     position: relative;
     padding: 45px;
     width: 100%;
-    /* border: 1px solid yellow; */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -141,21 +196,8 @@ header a:hover:before {
     transform: skewY(-10deg);
 }
 
-/* #about-me:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: rgb(6, 9, 25);
-    transform: translate(0%, 20%);
-    z-index: -1;
-} */
-
 .content {
     position: relative;
-    /* border: 1px dashed red; */
     margin: 10px;
 }
 
@@ -188,25 +230,10 @@ h2::first-letter {
 
 /******************************* EXPERIENCE ****************************/
 #experience {
-    /* position: relative; */
     padding: 45px;
     width: 100%;
-    /* border: 1px solid yellow; */
     box-sizing: border-box;
-    /* display: flex; */
-    /* flex-direction: column; */
 }
-
-/* #experience:before {
-    position: absolute;
-    content: '';
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: #0c3255;
-    transform: skewY(-10deg);
-} */
 
 #skills-navbar {
     padding: 10px 0;
@@ -416,59 +443,6 @@ footer a:hover .fa-circle {
     color: #00FFC6;
 }
 
-/************************** START SCREEN ******************************/
-#startcontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-}
-
-.box1 {
-    border: 3px solid #F55353;
-    background-color:#f553536c;
-    width: 100%;
-}
-
-.box1:hover {
-    animation: shake 3s ease infinite;
-}
-
-.box2 {
-    border:3px solid #00FFC6;
-    background-color: #00ffc864;
-    padding: 10px;
-    transform: translate(-2%, 8%);
-}
-
-.box2:hover {
-    animation: move 1s ease infinite;
-}
-
-.box2 h1 {
-    font-size: 1.5em;
-}
-
-.box2 p {
-    font-size: 1.1em;
-}
-
-#show-website {
-    border: 3px solid #00FFC6;
-    background-color: #00ffc864;
-    color:#f5f5cc;
-    padding: 10px;
-    border-radius: 10px;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-#show-website:hover {
-    border: 3px solid #F55353;
-}
-
 /****************************** KEYFRAMES ************************************/
 @keyframes fadeIn {
     0% {
@@ -513,6 +487,7 @@ footer a:hover .fa-circle {
 }
 /*************************** MEDIA QUERIES *********************************/
 @media screen and (min-width: 768px) {
+    /************************ GENERAL *************************/
     p, span {
         font-size: 1em;
     }
@@ -524,11 +499,23 @@ footer a:hover .fa-circle {
     button {
         font-size: 1em;
     }
-    
+
+    #about-me, #experience, #projects, #contact {
+        padding: 60px;
+    }
+
+    .content {
+        margin: 20px;
+    }
+
+
+
+    /********************* START SCREEN ************************/
     .box1 {
         width: 50%;
     }
 
+    /************************* INTRO **************************/
     #intro div {
         width: 80%;
         margin: 50px auto;
@@ -540,14 +527,7 @@ footer a:hover .fa-circle {
         font-size: 1.1em;
     }
 
-    #about-me, #experience, #projects, #contact {
-        padding: 60px;
-    }
-
-    .content {
-        margin: 20px;
-    }
-
+    /********************** EXPERIENCE ***********************/
     #experience {
         display: flex;
         justify-content: center;
@@ -567,6 +547,7 @@ footer a:hover .fa-circle {
         width: 650px;
     }
 
+    /********************** PROJECTS ************************/
     #projects #article-container article {
         width: 320px;
         height: 300px;
@@ -601,10 +582,11 @@ footer a:hover .fa-circle {
         justify-content: space-between;
     }
 
+    /********************** CONTACT ***********************/
     #contact h2 {
         text-align: center;
     }
-    
+
     /* If I don't put it here again, my javascript is ignored */
     .no-display {
         display: none;
@@ -612,6 +594,7 @@ footer a:hover .fa-circle {
 }
 
 @media screen and (min-width: 1024px) {
+    /********************** ABOUT ME ***********************/
     #about-me {
         padding: 110px;
         flex-direction: row;
@@ -637,6 +620,7 @@ footer a:hover .fa-circle {
         font-size: 1.1em;
     }
 
+    /********************** EXPERIENCE ***********************/
     #experience {
         justify-content: flex-end;
         padding: 110px;
@@ -658,7 +642,8 @@ footer a:hover .fa-circle {
     button:nth-child(3) {
         margin-right: 10px;
     }
-
+    
+    /********************** PROJECTS ***********************/
     #projects .content h2 {
         text-align: left;
     }
