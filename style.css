@@ -76,6 +76,21 @@ a:hover {
     text-shadow: 2px 2px #00FFC6;
 }
 
+header a {
+    position: relative;
+}
+
+header a:hover:before {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #F55353;
+    bottom: 20%;
+    left: -10px;
+}
+
 /**************************** INTRO ************************************/
 #intro {
     transform: skewY(-10deg);
