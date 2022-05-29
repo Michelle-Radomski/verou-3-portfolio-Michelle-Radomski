@@ -69,13 +69,6 @@ a:hover {
     color: #00FFC6;
 }
 
-#main-title {
-    color: #F55353;
-    text-transform: uppercase;
-    font-size: 2em;
-    text-shadow: 2px 2px #00FFC6;
-}
-
 header a {
     position: relative;
 }
@@ -91,7 +84,10 @@ header a:hover:before {
     left: -10px;
 }
 
-/**************************** INTRO ************************************/
+#logo h1 {
+    color: #00FFC6;
+}
+/*************************** INTRO ************************************/
 #intro {
     transform: skewY(-10deg);
     width: 100%;
@@ -538,6 +534,10 @@ button:nth-child(3) {
         text-align: right;
         margin-right: 10px;
     }
+
+    #contact h2 {
+        text-align: center;
+    }
     
     /* If I don't put it here again, my javascript is ignored */
     .no-display {
@@ -618,9 +618,5 @@ button:nth-child(3) {
         top: 10%;
         width: 150%;
         height: 80%;
-    }
-
-    #contact h2 {
-        text-align: left;
     }
 }
