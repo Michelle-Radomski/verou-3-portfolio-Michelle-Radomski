@@ -209,7 +209,7 @@ button:nth-child(3) {
     margin-right: 5px;
 }
 
-button {
+.button {
     border: 2px solid #00FFC6;
     border-radius: 5px;
     background-color: #0c3255;
@@ -221,7 +221,7 @@ button {
     cursor: pointer;
 }
 
-.active, #skills-navbar button:hover {
+.active, .button:hover {
     background-color: #00FFC6;
     color: rgb(6, 9, 25)
 }
@@ -332,6 +332,15 @@ button {
     color: #00FFC6;
 }
 
+/***************************** CONTACT ME ******************************/
+#contact h2 {
+    margin-bottom: 40px;
+}
+
+#contact-button {
+    display: flex;
+    justify-content: center;
+}
 
 /************************** START SCREEN ******************************/
 #startcontainer {
@@ -539,6 +548,10 @@ button {
     }
 
     #projects .content h2 {
+        text-align: left;
+    }
+
+    #contact h2 {
         text-align: left;
     }
 }
