@@ -1,9 +1,5 @@
 # Portfolio
 
-## Important note
-
-At the moment I am wrestling with Heroku to get my Plantasia website up and running for everyone to see but I will fix this very soon. In the meantime you can view the code itself on my github by clicking the github icon at my Plantasia article.
-
 ## Inspiration for portfolio
 
 Like we at BeCode like to say: Google is your best friend! In order to get some inspiration I have checked a lot of other portfolios out there in the universe. I decided I wanted to go for a dark theme since I never made that before.
